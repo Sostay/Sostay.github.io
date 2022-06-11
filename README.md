@@ -15,4 +15,4 @@
 
 遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/klovien/klovien.github.io/blob/master/LICENSE)。 -->
 
-<img src="https://giphy.com/embed/3o6UBedJJfaxXHvZyU" width="480" height="480" frameBorder="0" class="giphy-embed">
+<iframe src="https://giphy.com/embed/3o6UBedJJfaxXHvZyU" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
