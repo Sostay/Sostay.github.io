@@ -16,4 +16,4 @@
 遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/klovien/klovien.github.io/blob/master/LICENSE)。 -->
 
 
-<img align="center" src="https://media2.giphy.com/media/3o6UBedJJfaxXHvZyU/giphy.gif?cid=790b76115d639ccac2ffdc026fa2811e1da14fa1ff61e8db&rid=giphy.gif&ct=g">
+<img align="center" src="https://media1.giphy.com/media/67SVlMfSytb5VfvD90/giphy.gif?cid=790b7611b94d64431f3003aa59230fa455c7b5cd6a304ed8&rid=giphy.gif&ct=ts">
