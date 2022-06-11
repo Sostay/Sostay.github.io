@@ -18,3 +18,5 @@
 <iframe src="https://giphy.com/embed/3o6UBedJJfaxXHvZyU" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 
 <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/3o6UBedJJfaxXHvZyU" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/animation-loop-3o6UBedJJfaxXHvZyU">via GIPHY</a></p>
+
+<img src="https://media2.giphy.com/media/3o6UBedJJfaxXHvZyU/giphy.gif?cid=790b76115d639ccac2ffdc026fa2811e1da14fa1ff61e8db&rid=giphy.gif&ct=g">
