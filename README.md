@@ -14,3 +14,5 @@
 ### License
 
 遵循 MIT 许可证。有关详细,请参阅 [LICENSE](https://github.com/klovien/klovien.github.io/blob/master/LICENSE)。 -->
+
+<iframe src="https://giphy.com/embed/3o6UBedJJfaxXHvZyU" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/animation-loop-3o6UBedJJfaxXHvZyU">via GIPHY</a></p>
