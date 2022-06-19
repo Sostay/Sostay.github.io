@@ -25,8 +25,10 @@ RSS: false
 # jianshu_username:   e71990ada2fd
 # twitter_username:   qiubaiying
 
-
-
+#自定义控制导航栏显示
+collections:
+  pages:
+    output: false
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
