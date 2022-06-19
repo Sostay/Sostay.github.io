@@ -27,6 +27,8 @@ RSS: false
 
 #自定义控制导航栏显示
 collections:
+  about:
+    output: true
   pages:
     output: false
 
