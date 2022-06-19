@@ -21,8 +21,8 @@ eu.org免费域名从1996年就有了，由此可见是非常非常早，计划�
 
 填表挺简单的，可以参考视频教程。
 
-B站：https://www.bilibili.com/video/BV1JB4y1m7e9/
-Youtube：https://www.youtube.com/watch?v=xWgeCUpM81I
+    B站：https://www.bilibili.com/video/BV1JB4y1m7e9/
+    Youtube：https://www.youtube.com/watch?v=xWgeCUpM81I
 
 然后成功后到邮箱（垃圾箱）找到邮件、激活，然后登录。
 
@@ -32,8 +32,8 @@ Youtube：https://www.youtube.com/watch?v=xWgeCUpM81I
 
 域名服务器建议选择DNSPod，后期可在dnspod后台修改
 
-celsius.dnspod.net
-joshua.dnspod.net
+    celsius.dnspod.net
+    joshua.dnspod.net
 
 这里先只选择server names，然后Submit，注意看检查页面，如果出现 No error,Done.说明成功了~
 
@@ -44,8 +44,8 @@ joshua.dnspod.net
 
 eu.org域名通过后是有邮件通知的，但是都在垃圾箱。若是想转到cloudflare出现问题，请参考视频：
 
-Bilibili：https://www.bilibili.com/video/BV1ST4y1z7Ra/
-Youtube：https://www.youtube.com/watch?v=EOsBJxtiOho
+    Bilibili：https://www.bilibili.com/video/BV1ST4y1z7Ra/
+    Youtube：https://www.youtube.com/watch?v=EOsBJxtiOho
 
 
 在仓库里添加CNAME文件并在文件中填写绑定的域名<img src="https://pica.zhimg.com/50/v2-f2bf1f2809628a27e74fad09ce7e3ebc_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1185" data-rawheight="545" data-default-watermark-src="https://pic1.zhimg.com/50/v2-eb4dafde952289b6caee623e5d55d839_720w.jpg?source=1940ef5c" class="origin_image zh-lightbox-thumb" width="1185" data-original="https://pic3.zhimg.com/v2-f2bf1f2809628a27e74fad09ce7e3ebc_r.jpg?source=1940ef5c"/>文件里填写要绑定的域名且不要包含Http://和www<img src="https://pic3.zhimg.com/50/v2-29fad73d589c2d632c702aa0ad63464d_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="755" data-rawheight="270" data-default-watermark-src="https://pic4.zhimg.com/50/v2-eedb7803efd9d5654de04b2633f3b528_720w.jpg?source=1940ef5c" class="origin_image zh-lightbox-thumb" width="755" data-original="https://pic2.zhimg.com/v2-29fad73d589c2d632c702aa0ad63464d_r.jpg?source=1940ef5c"/>进入设置，找到 Custom domain添加域名后保存即可（添加CNAME文件并在文件中填写绑定的域名后应该会自动保存，看看有没有自动保存）<img src="https://pic2.zhimg.com/50/v2-5406fb283c0e9128f0b7a5ff1aad48ff_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1093" data-rawheight="270" data-default-watermark-src="https://pica.zhimg.com/50/v2-bb42b10dde38e5721de89e897e83bd74_720w.jpg?source=1940ef5c" class="origin_image zh-lightbox-thumb" width="1093" data-original="https://pic2.zhimg.com/v2-5406fb283c0e9128f0b7a5ff1aad48ff_r.jpg?source=1940ef5c"/><img src="https://pic3.zhimg.com/50/v2-c7c16d3e828a4368cc257e935cf4f28f_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1044" data-rawheight="386" data-default-watermark-src="https://pic3.zhimg.com/50/v2-3c29e96d2010c63cc27c7acf5739ade1_720w.jpg?source=1940ef5c" class="origin_image zh-lightbox-thumb" width="1044" data-original="https://pica.zhimg.com/v2-c7c16d3e828a4368cc257e935cf4f28f_r.jpg?source=1940ef5c"/>3 添加域名解析ping你的http://github.io域名，得到一个IP；<img src="https://pic1.zhimg.com/50/v2-9ca1c9b4423e6d6b58892feaab525cc1_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="696" data-rawheight="218" data-default-watermark-src="https://pic3.zhimg.com/50/v2-34dc829ccc505d9e4ac32b8e75f30ce5_720w.jpg?source=1940ef5c" class="origin_image zh-lightbox-thumb" width="696" data-original="https://pic2.zhimg.com/v2-9ca1c9b4423e6d6b58892feaab525cc1_r.jpg?source=1940ef5c"/>修改你的域名解析记录，；<img src="https://pic2.zhimg.com/50/v2-52f05c5dd12956a88de46799fc3bf1c8_720w.jpg?source=1940ef5c" data-caption="" data-size="normal" data-rawwidth="1180" data-rawheight="323" data-default-watermark-src="https://pic1.zhimg.com/50/v2-1725e671b00f7fee6bfeeec6df007f5b_720w.jpg?source=1940ef5c" class="origin_image zh-lightbox-thumb" width="1180" data-original="https://pic2.zhimg.com/v2-52f05c5dd12956a88de46799fc3bf1c8_r.jpg?source=1940ef5c"/>添加一个A记录，用得到的IP，一个CNAME记录，记录值为[你的用户名.github.io]，这样就能访问到你的博客了。
