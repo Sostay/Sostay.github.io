@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<!-- 文章页文字溢出不换行补丁 -->
+<style>
+    .post-preview .post-content-preview {
+        word-wrap:break-word;
+    }
+</style>
+
 <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
 <!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
