@@ -1,7 +1,7 @@
 {
-  "name": "Xion.",
-  "short_name": "Xion.",
-  "description": "A personal blog by engineer",
+  "name": "Sunright",
+  "short_name": "Sunright",
+  "description": "A personal blog by Xion.",
   "icons": [{
     "src": "icons/pwa_icon_128.png",
     "sizes": "128x128",
