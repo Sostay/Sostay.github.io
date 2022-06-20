@@ -358,6 +358,11 @@ section.clock div.seconds::before, section.clock div.minutes::before, section.cl
 -webkit-transform:translateX(-50%);
          transform:translateX(-50%);
 }
+/* <!----修复footer显示层级-----> */
+footer {
+  z-index: -1;
+  margin-bottom: 15px;
+}
 /* <!----指针样式调整-----> */
 section.clock div.seconds::before {
  width:5px;
