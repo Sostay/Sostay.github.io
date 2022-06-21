@@ -5,7 +5,7 @@ header-img: img/head/index-one.jpg
 email: isostay@gmail.com
 description: "阳光正好"
 keyword: "自说自话, 向往阳光, 浴室沉思, 后知后觉"
-url: "https://sostay.github.io"          # your host, for absolute URL
+url: "https://xion.eu.org"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/Sostay/Sostay.github.io.git" # you code repository
 
