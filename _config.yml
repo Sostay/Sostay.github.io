@@ -7,7 +7,7 @@ description: "阳光正好"
 keyword: "自说自话, 向往阳光, 浴室沉思, 后知后觉"
 url: "https://sostay.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/klovien/klovien.github.io.git" # you code repository
+github_repo: "https://github.com/Sostay/Sostay.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -59,11 +59,11 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: d18b343dd9c7ca49518a                            #生成的clientID
-  clientSecret: 539e88b8a7feffaddbb553b9c421dfefcbc6eced    #生成的clientSecret
+  clientID: 8d0f5197310e3854dc12                            #生成的clientID
+  clientSecret: 5b4a563e1929d98f98afc29cb36054bf98180d6d    #生成的clientSecret
   repo: Sostay.github.io    #仓库名称
   owner: Sostay  #github用户名
-  admin: Sostay
+  admin: Xion.
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
