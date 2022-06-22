@@ -448,7 +448,7 @@ var sound_tap = null;
 const init_sounds = () => {
 	sound_tap = new Audio();
 	// sound_tap.addEventListener('ended', init_sounds, false);
-	sound_tap.src = './audios/tapping.wav';
+	sound_tap.src = 'audios/tapping.wav';
 };
 init_sounds();
 num_pad.addEventListener('touchstart', (e) => {
