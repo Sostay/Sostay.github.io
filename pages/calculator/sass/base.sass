@@ -1,0 +1,91 @@
+$btn-bg: #fff
+$btn-bg-hover: darken($btn-bg, 5%)
+$btn-border-color: #839aa2
+$btn-border-radius: 10px
+$btn-depth: 5px
+$style-list: primary, secondary, warning, white
+$color-list: #5d7780,   #bcc9ce, #ffb06d,  #fff
+
+sup
+	font-size: .5em
+	margin-top: -1em
+.no-act
+	pointer-events: none
+.no-select
+	user-select: none
+.is-hidden
+	display: none
+.btn
+	$btn-border-radius-bottom: $btn-border-radius + 5px
+	border: 1px solid
+	border-bottom-width: $btn-depth
+	border-radius: $btn-border-radius $btn-border-radius $btn-border-radius-bottom $btn-border-radius-bottom
+	cursor: pointer
+	position: relative
+	user-select: none
+	&:after
+		content: ''
+		display: block
+		position: absolute
+		top: $btn-depth + 1px
+		left: -2px
+		right: -2px
+		bottom: -$btn-depth - 2px
+		background: darken($btn-border-color, 80%)
+		border-radius: $btn-border-radius $btn-border-radius $btn-border-radius-bottom $btn-border-radius-bottom
+		z-index: -1
+	// &:active,
+	&.is-disabled, &.is-active
+		border-bottom-width: 1px
+		margin-top: $btn-depth - 1px
+		&:after
+			top: $btn-depth - 2px
+			bottom: -3px
+			// border-radius: $btn-border-radius-bottom - 2px
+	// background: $btn-bg
+	// border-color: $btn-border-color
+	// box-shadow: 0 1px 0 0px darken($btn-border-color, 80%)
+	// &:hover
+		// background: $btn-bg-hover
+	@for $i from 1 through length($style-list)
+		&.is-#{nth($style-list, $i)}
+			$color: nth($color-list, $i)
+			background: $color
+			border-color: darken($color, 15%)
+			@if (lightness($color) < 50)
+				color: lighten($color, 50%)
+			@else
+				color: darken($color, 60%)
+			@if ($color == #FFF)
+				color: #333
+			&.is-active
+				background: darken($color, 10%)
+			
+	&.is-link
+		color: #373fa5
+		text-decoration: none
+
+.pills
+	display: flex
+	.pill
+		background: $btn-bg
+		border: 1px solid $btn-border-color
+		border-radius: $btn-border-radius
+		padding: 0 1rem
+		text-align: center
+		cursor: pointer
+		user-select: none
+		&.is-grow
+			flex-grow: 1
+		&:hover
+			background: $btn-bg-hover
+		&:active
+			box-shadow: 0 1px $btn-depth #aaa inset
+
+.list
+	&__item
+		list-style: none
+		border-bottom: 1px solid $btn-border-color
+		padding: 0 1rem
+		&:last-child
+			border-bottom: none
