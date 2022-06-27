@@ -60,7 +60,7 @@
     
     editormd.title        = editormd.$name = "Editor.md";
     editormd.version      = "1.5.0";
-    editormd.homePage     = "https://pandao.github.io/editor.md/";
+    editormd.homePage     = "https://xion.eu.org/editor.md/examples";
     editormd.classPrefix  = "editormd-";
     
     editormd.toolbarModes = {
