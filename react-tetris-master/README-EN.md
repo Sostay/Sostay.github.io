@@ -1,5 +1,5 @@
 ### 中文介绍
-请查看 [README.md](https://github.com/chvin/react-tetris/blob/master/README.md)
+请查看 [README.md](https://xion.eu.org/react-tetris/blob/master/README.md)
 
 ----
 ## Use React, Redux, Immutable to code Tetris.
@@ -7,7 +7,7 @@
 ----
 Tetris is a classic game that has always been enthusiastically implemented in various languages. There are many versions of it in Javascript, and using React to do Tetris has become my goal.
 
-Open [https://chvin.github.io/react-tetris/?lan=en](https://chvin.github.io/react-tetris/?lan=en) to play!
+Open [https://xion.eu.org/react-tetris-master/docs](https://xion.eu.org/react-tetris-master/docs/) to play!
 
 ----
 ### Interface preview
@@ -241,6 +241,3 @@ npm run build
 ```
 
 Will build the application in the build folder.
-
-
-
