@@ -5,7 +5,7 @@ title: 网址导航
 description: 网址导航
 
 # favicon of website
-favicon: "{{ site.baseurl }}/img/favicon.ico"
+favicon: "https://xion.eu.org/img/favicon.ico"
 
 # your website url
 url: https://xion.eu.org/site/
