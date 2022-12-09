@@ -1,20 +1,20 @@
 # title of website
-title: site
+title: 网址导航
 
 # description of website
-description: rentianyu's navigation site
+description: 网址导航
 
 # favicon of website
-favicon: "https://github.com/rentianyu.png?size=40"
+favicon: "{{ site.baseurl }}/img/favicon.ico"
 
 # your website url
-url: https://rentianyu.github.io/site/
+url: https://xion.eu.org/site/
 
 # github profile url
-github: "https://github.com/rentianyu"
+github: "https://github.com"
 
 # footer message
-footer: © 2021-2021 @rentianyu
+footer: © 2021-20221 @Sunright
 
 # template(theme) of your site, available:
 # 1. webstack (http://webstack.cc)
