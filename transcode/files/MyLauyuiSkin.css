@@ -1,0 +1,21 @@
+﻿div.layui-layer-setwin {
+    position: fixed;
+    right: 200px;
+    top: 500px;
+ 
+}
+
+
+    div.layui-layer-setwin > span.layui-layer-setwin {
+        position: absolute;
+        right: 200px;
+        top: 500px;
+    }
+
+    span.layui-layer-setwin > .layui-layer-close1 {
+        position:  absolute;
+        right: 0px;
+        font-size: 0;
+        float:right;
+        line-height: normal;
+    }

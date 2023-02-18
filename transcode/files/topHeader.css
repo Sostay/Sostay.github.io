@@ -1,0 +1,1089 @@
+::-webkit-input-placeholder { /* Edge */
+    color: #ccc;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+::placeholder {
+    color: #ccc;
+}
+.pusmall .wrapper02 {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+}
+
+.ToolHeader .ToolTop {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    font-size: 12px;
+}
+
+.ToolHeader .ToolTop .TnavList li {
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    display: inline-block;
+    float: left;
+    z-index: 110;
+    white-space: nowrap;
+}
+
+.ToolHeader .ToolTop .TnavList li.def {
+    display: block;
+    height: 40px;
+    padding: 0 7px;
+    color: #747d87;
+    cursor: pointer;
+    border-left: 0;
+    border-right: 0;
+    white-space: nowrap;
+}
+
+.ToolHeader .ToolTop .TnavList li a span,.ToolHeader .ToolTop .TnavList li a i{
+    color: #888;
+    display: inline-block;
+    position: relative;
+}
+.ToolHeader .ToolTop .TnavList li.tdrap {
+    display: block;
+    color: #747d87;
+    border-left: 0;
+    border-right: 0;
+    white-space: nowrap;
+}
+.ToolHeader .ToolTop .TnavList li.tdrap i{
+    font-size: 12px;
+    margin-right: 6px;
+}
+.ToolHeader .ToolTop .TnavList li.def a {
+    padding: 0 4px;
+}
+.ToolHeader .ToolTop .TnavList li.tdrap:hover a span,.ToolHeader .ToolTop .TnavList li.tdrap:hover a i,.ToolHeader .ToolTop .TnavList li.tdrap:hover span,.ToolHeader .ToolTop .TnavList li.tdrap:hover i.corner,.ToolHeader .ToolTop .TnavList li.tdrap:hover i.iconkehuduan{color:#4192E7}
+.ToolHeader .ToolTop .TnavList li.tdrap a {
+    /* padding: 0 20px 25px 30px; */
+}
+.ToolHeader .ToolTop .TnavList li:first-child a{
+  color: #999;
+  text-decoration: none;
+  /* border-radius: 11px; */
+  border: 1px solid #eee;
+  padding: 2px 8px;
+  margin-right: 15px;
+  font-size: 12px;
+}
+/* .ToolHeader .ToolTop .TnavList li:first-child:hover a{
+  color: #fff;
+  background: #4192E7;
+  border: 1px solid #4192E7;
+} */
+.ToolHeader .ToolTop .TnavList li:hover a#track-navNewTab {color: #4192E7;border:1px solid #4192E7}
+/* .ToolHeader .ToolTop .TnavList li.tdrap:nth-child(2) .tdrap-cur{
+  left:-22px
+} */
+.ToolHeader .ToolTop .TnavList li.tdrap:nth-child(3) .tdrap-cur{
+  left: -92px;
+}
+.ToolHeader .ToolTop .TnavList li.tdrap:nth-child(4) .tdrap-cur{
+  left: -60px;
+}
+.ToolHeader .ToolTop .TnavList li.tdrap:nth-child(4) .tdrap-cur .poptip-arrow i{
+  right: 57px;
+}
+.ToolHeader .ToolTop .TnavList li.tdrap a i.corner {
+    background-position: 0 0;
+    width: 9px;
+    height: 4px;
+    display: block;
+    right: -13px;
+    position: absolute;
+    top: 1px;
+    font-size: 13px;
+}
+.ToolHeader .ToolTop .TnavList li.tdrap a i{
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.ToolHeader .ToolTop .TnavList li:hover p > a:hover {
+    border: 0;
+    color: #222;
+}
+.ToolHeader .ToolTop .TnavList li .thisHover,.ToolHeader .ToolTop .msgItem .thisHover {
+    width: 128px;
+    height: 20px;
+    position: absolute;
+    right: 0px;
+    top: -13px;
+    z-index: 8;
+}
+.ToolHeader .ToolTop .TnavList li .tdrap-cur {
+    min-width: 128px;
+    display: none;
+    _left: 0;
+    background-color: #fff;
+    position: absolute;
+    float: left;
+    top: 40px;
+    z-index: 60;
+    text-align: center;
+    border-radius: 3px;
+    box-shadow: -1px 3px 5px 3px rgba(82, 148, 218, 0.1);
+}
+.ToolHeader .ToolTop .TnavList li .tdrap-cur a {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    white-space: nowrap;
+    color: #222;
+    border: none;
+    padding: 0;
+    margin: auto;
+}
+.ToolHeader .ToolTop .TnavList li .tdrap-cur .clients{
+    width: 245px;
+    height: 139px;
+    line-height: 25px;
+    padding: 18px 0 0;
+}
+.ToolHeader .ToolTop .TnavList li .tdrap-cur .clients h3{
+    opacity: 1;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #222222;
+    margin-top: 10px
+}
+.ToolHeader .ToolTop .TnavList li .tdrap-cur .clients p{
+    font-size: 12px;
+    color: #888;
+}
+.ToolHeader .ToolTop .TnavList li .tdrap-cur .clients .iconliulanqichajian{
+    font-size:28px;
+    color: #4192E7;
+}
+.ToolHeader .ToolTop .TnavList li:hover .tdrap-cur{
+    display: block;
+}
+.ToolHeader .ToolTop .TnavList li:hover .tdrap-cur a:hover {
+    border: none;
+    background:#F0F7FF;
+    color: #4192E7;
+    text-decoration: none;
+}
+.ToolHeader .ToolTop .TnavList li:hover .tdrap-cur a:last-child:hover{
+    border-radius: 0 0 3px 3px;
+}
+.ToolHeader .ToolTop .TnavList li .poptip-arrow i,.ToolHeader .ToolTop .msgItem .poptip-arrow i{
+    position:absolute;
+    top: -22px;
+    color: #fff;
+    text-shadow: 0px -3px 3px rgba(82, 148, 218, 0.1);
+}
+
+.ToolHeader .ToolTop .msgItem .poptip-arrow i{
+    /* right: 120px; */
+}
+.ToolHeader .ToolTop .TnavList li a.downloadBtn,.ToolHeader .ToolTop .TnavList li a.downloadBtn:hover{
+    width: 106px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #4192e7;
+    font-size: 14px;
+    opacity: 1;
+    border: 1px solid #4192e7;
+    border-radius: 19px;
+    margin-top: 7px;
+}
+.ToolHeader .ToolTop .TnavList li:hover .tdrap-cur a.downloadBtn:hover{
+    color: #fff;
+    background: #4192e7;
+    border-radius: 19px;
+}
+.ToolTop .TnavList li .tdrap-cur img#code{
+    width: 131px;
+    height: 131px;
+    margin: 10px
+}
+.ToolTop .msgBox{
+    display:flex;
+}
+.ToolTop .msgBox .toolvip{
+    margin-top:14px
+}
+.ToolTop .icontongzhi{
+    color: #222;
+    margin-left: 21px;
+    line-height: 39px;
+    margin-right: 10px;
+}
+.ToolTop .msgBox a{
+    color:#222
+}
+.ToolTop .msgBox .msgbtn:hover em,.ToolTop .msgBox .msgbtn:hover .iconfont{
+    color: #4192E7;
+}
+.ToolTop .msgBox a:hover{
+    color: #4192E7;
+    text-decoration: none;
+}
+.ToolTop .msgBox i .msgItem{
+    display: none;
+    position: absolute;
+    width:260px;
+    height: 328px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 2px 0px 16px -2px rgba(29,73,120,.1);
+    margin-left: -150px;
+    z-index: 999;
+}
+.ToolTop .msgBox i:hover .msgItem{
+    display: block;
+}
+.ToolTop .msgBox .msgbtn .poptip-arrow i{right: 35px;}
+.ToolTop .msgBox i .msgItem .msgTab ul{
+    display: flex;
+    height: 37px;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem{
+    width: 130px;
+    line-height: 37px;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #222;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem em{
+    color: #222;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem .msgItemContent{
+    display: none;
+    position: absolute;
+    background: #fff;
+    left: 0;
+    height: 290px;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem .msgItemContent.msg{
+    width: 100%;
+    line-height: 265px;
+    text-align: center;
+    margin: auto;
+    color: #ccc;
+    font-size: 12px;
+    left:0
+}
+.ToolTop .msgBox i .msgItem .msgTab li:hover,.ToolTop .msgBox i .msgItem .msgTab .msgTabItem.currentpage{
+    color: #4192E7;
+    border-bottom: 2px solid #4192E7;
+}
+.ToolTop .msgBox i .msgItem .msgTab li:hover,.Tool-link li:hover i.corner,.ToolTop .msgBox i .msgItem .msgTab .msgTabItem.currentpage em{
+    color: #4192E7;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem.currentpage span em{
+    color:#222
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem.currentpage:hover .msgItemContent{
+    display: block;
+    background: #fff;
+    position: absolute;
+    left: 0;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem.currentpage:hover .msgItemContent span a:hover em{
+    color: #4192E7;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem ul{
+    width: 260px;
+}
+
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem span{
+    width: 260px;
+    line-height: 30px;
+    height: 30px;
+    display: flex;
+    text-align: left;
+    color: #222;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem span:first-child{
+    margin-top: 5px;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem span:last-child{
+    margin-top: 5px;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem span a{
+    display: flex;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem span i{
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 13px 10px 0 15px;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem span a p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 175px;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem span em{
+    color: #888;
+}
+
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem span:last-child{
+    height: 40px;
+    line-height: 40px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    display: block;
+    color: #4192E7;
+    position: absolute;
+    bottom: 0;
+}
+.ToolTop .msgBox i .msgItem .msgTab .msgTabItem span:last-child a{
+    display: block;
+}
+.sNew,.sNewnav {
+    background: url(//csstools.chinaz.com/tools/images/public/seo-new.gif) center right no-repeat;
+    display: block;
+    color: #747d87;
+    width: 90px;
+    height: 25px;
+}
+.sNewnav {
+    position: absolute;
+    top: -6px;
+    right: 0;
+}
+
+.ToolHeader .ToolTop .TrigW {
+    line-height: 28px;
+    margin-left: 12px;
+}
+
+.ToolHeader .ToolTop .TrigW a {
+    color: #222 !important;
+    text-decoration: none;
+}
+
+.ToolHeader .ToolTop .TrigW a:hover {
+    color: rgb(34,34,34,.8) !important;
+}
+
+/*ToolTop-end*/
+
+/*ToolHead-begin*/
+.ToolHead {
+    padding: 10px 0;
+    background-color: #ffffff;
+    width: 100%;
+    min-width: 1200px;
+}
+
+.ToolHead .ToolLogo {
+    width: 200px;
+    height: 60px;
+}
+
+.ToolHead .ToolLogo img {
+    vertical-align: middle;
+}
+
+.pusmall .ToolLogo {
+    width: 180px;
+}
+
+.pusmall .ToolHead .ToolLogo img {
+    max-width: 100%;
+}
+
+/*ToolHead-end*/
+
+/*ToolNavbar-begin*/
+.ToolNavbar {
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    min-width: 1200px;
+    font-family: 'Microsoft YaHei';
+    background: #fff;
+    box-shadow: 0 4px 5px -4px rgba(0,0,0,.04);
+    margin-bottom: 10px;
+}
+
+.ToolNavbar .navbar-bg, .ToolNavbar .navbar-bg-top .navbar-content-box ul li.dt, .ToolNavbar .navbar-bg-top .navbar-content-box ul li.dd {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.hid{
+    display: none !important;
+    position:absolute
+}
+
+.Tool-mainnav {
+    height: 50px;
+  }
+  .Tool-nav {width:1200px;height:50px;margin:0 auto;display:flex;position: relative;}
+  .Tool-nav > .Tool-link {min-width:845px;z-index: 99;}
+  .Tool-logo a {
+    display: block;
+    width: 132px;
+    height: 79px;
+  }
+  .Tool-logo a img {
+    margin-top: 21px;
+  }
+ 
+  .Tool-link > ul > li {
+    float: left;
+    height: 100%;
+    padding-right: 35px;
+    z-index: 99;
+  }
+  .Tool-link > ul > li.last-nav-link {
+    padding-right: 0px;
+  }
+  /* .Tool-link > ul > .nothis{
+    width: 155px;
+    height: 40px;
+    float: left;
+    position: relative;
+    left: -33px;
+  } */
+  .Tool-link > ul > li > a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #222;
+    border-bottom: 2px solid transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  .Tool-link > ul > li:hover > a {
+    color: #4192E7;
+    border-bottom-color: #4192E7;
+  }
+  .Tool-link > ul > li > a {
+    float: left;
+  }
+  .search-collect-btn {position:absolute;top: 6px;right: 0;margin:auto;z-index: 999;}
+  .search-collect-btn > ul {display:flex;}
+  .search-collect-btn > ul > li > a#searchBtn,.search-collect-btn > ul > li > a#collectBtn {display:block;width:74px;height:28px;line-height:28px;text-align:center;border:1px solid #eee;border-radius:15px;font-size:14px;color:#222;margin-left:10px;background-color:#fff;padding:0 0;}
+  .search-collect-btn > ul > li > a.navNewTab i {font-size:12px;margin-right:2px;}
+  .search-collect-btn > ul > li > a.navNewTab {border:none;color:#999;font-size:12px;}
+  .search-collect-btn > ul > li > a.navNewTab:hover {text-decoration:none;}
+  .search-collect-btn > ul > li:hover > a#searchBtn,.search-collect-btn > ul > li > a#searchBtn.cur,.search-collect-btn > ul > li:hover > a#collectBtn,.search-collect-btn > ul > li > a#collectBtn.cur {border:1px solid #4192E7;color:#4192E7;text-decoration:none;transition:.3s;}
+  .search-collect-btn > ul > li > a#searchBtn i {margin-right:5px;}
+  
+  .searchBox{min-width: 146px;height: 38px;line-height: 38px;background-color: #F3F5F8;text-align: right;padding-right:10px;border-radius: 3px 3px 0 0;display: flex;transition: width 2s;-moz-transition:width 2s; /* Firefox 4 */-webkit-transition:width 2s; /* Safari and Chrome */-o-transition:width 2s; /* Opera */}
+  .searchBox i.iconfont{font-size: 14px;color: #4192E7;cursor: pointer;margin-right:10px;margin-left: 1px;}
+  .searchBox i.closes{display: none;}
+  .searchBox input{width:130px;border: none;background-color: #F3F5F8;padding-left: 20px;border-radius: 3px 3px 0 0;z-index: 999;}
+  .searchMain{width: 1200px;position: relative;margin: auto;z-index: 9999;margin-top: -6px;}
+  .bgDiv {width:100%;height:100%;opacity:.3;position:fixed;display:none;z-index:9;top: -10px;}
+  .rightNav {width:unset;background-color:#fff;position:absolute;z-index:999;right:0px;box-shadow: -1px 3px 5px 0px rgba(82, 148, 218, 0.1);border-radius:0 0 3px 3px;padding-top: 13px;transition: width 1s;-moz-transition:width 1s; /* Firefox 4 */-webkit-transition:width 1s; /* Safari and Chrome */-o-transition:width 1s; /* Opera */}
+  .rightNav div{float: left;display: none;padding: 15px 0px 5px 0;}
+  .rightNav .history{padding: 0 0;width:unset;background-color:unset;border:unset;position: unset;right:auto;top:auto;}
+  .rightNav .history .comtool,.rightNav .history .hottool{padding-top: 2px;}
+  .rightNav .history .comtool{padding-bottom: 5px;}
+  .rightNav .history .comtool h3,.rightNav .history .hottool h3{color:#BCBABA;font-size: 14px;padding-left: 20px;}
+  .rightNav .history .comtool .item,.rightNav .history .hottool .item{max-height: 62px;padding-left: 20px;overflow: hidden;}
+  .rightNav .history .hottool .item{padding-left: 10px;}
+  .rightNav .history .item a{max-width:110px;height: 26px;line-height: 26px;padding: 0 10px;text-align: center;color: #555;text-decoration: unset;border-radius: 2px;background-color: #ECEFF4;float: left;margin: 0 10px 10px 0px;}
+  .rightNav .history .item a:hover{color: #4192E7;text-decoration: unset;}
+  .rightNav .history .item.recentVisit a,.rightNav .history .item.hotRecommend em{max-width:90px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;text-decoration: none}
+  .rightNav .history .item.hotRecommend a{min-width: 112px;max-width: 112px;}
+  .rightNav .history .item.hotRecommend a{overflow: unset;text-overflow:unset;white-space: unset;}
+  .rightNav .history .hottool .item a{display: block;height: 20px;line-height: 20px;background-color: #fff;display: flex;text-decoration: none}
+  .rightNav .history .hottool .item a i{width:20px;height: 20px;line-height: 20px;margin-right: 10px;text-align: center;color: #B3B1B1;border-radius: 2px;background-color: #ECEFF4;display: block;}
+  .rightNav .history .hottool .item a:nth-child(1) i{background-color: rgba(255,0,0,0.1);color: rgba(255,0,0,1);}
+  .rightNav .history .hottool .item a:nth-child(2) i{background-color: rgba(250,100,0,0.15);color: rgba(250,100,0,1);}
+  .rightNav .history .hottool .item a:nth-child(3) i{background-color: rgba(247,181,0,0.2);color: rgba(240,176,0,1);}
+  .rightNav .hottool .item a{margin-right: 10px;}
+  #search_show.result::-webkit-scrollbar{width:8px;height:1px;cursor:pointer;}
+  #search_show.result::-webkit-scrollbar{height: 8px;}
+  #search_show.result::-webkit-scrollbar-thumb{border-radius:8px;box-shadow:inset 0 0 5px rgba(0,0,0,0.2);background:#fcf9f9;}
+  #search_show.result::-webkit-scrollbar-track{border-radius:8px;background:#fff;}
+  #search_show.result{color: #222;display: block;max-height: 320px;padding-bottom: 10px;}
+  /* .rightNav .result span{height: 32px;line-height: 32px;} */
+  #search_show.result a{height: 32px;line-height: 32px;color: #222;display: flex;justify-content: space-between;padding-left: 20px;padding-right: 20px;text-decoration: none;font-weight: normal;}
+  #search_show.result a p:last-child{color: #888;font-size: 12px;}
+  #search_show.result .org{color: rgba(250,126,0,1);}
+  #search_show.result a:hover,#search_show.result span:hover{color: #4192E7 !important;background-color: #f0f7ff;}
+  .rightNav .nullData{height:201px;line-height:170px;text-align: center;color: #CCCCCC;}
+  .pulldown-Nav .shadowbg{
+    border-top: 1px solid #eee;
+    background: url(//csstools.chinaz.com/tools/images/headybg.png) repeat-x;
+    height: 15px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    opacity: .55;
+    display: none;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item dl dt.searchTit{
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain{
+      width: 1075px;
+      margin: 23px auto;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .close{
+    position: relative;
+    right: -30px;
+    top: -10px;
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .close:hover{
+    color: rgb(153,153,153,.8);
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFormInpt{
+      width: 1036px;
+      height: 47px;
+      line-height: 47px;
+      border-radius: 5px;
+      border: 1px solid #eee;
+      display: flex;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFormInpt .searchInpt{
+    width: 1036px;
+    height: 47px;
+    line-height: 47px;
+    text-align: left;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFormInpt .chinaz-search-btn{
+    width: 116px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    background: #4192E7;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 0 5px 5px 0;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFormInpt .chinaz-search-btn:hover{
+    background: #4192E7;
+    opacity: .8;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .select{
+    position: absolute;
+    height: 115px;
+    background: #fff;
+    width: 1036px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.08);
+    overflow-y: scroll;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .select::-webkit-scrollbar{
+      width: 3px;
+      height:100px
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .select::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 5px #ccc;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .selectt::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 5px transparent;
+    border-radius: 2px;
+    background: transparent;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .select ul.toolnodata{
+    text-align: center;
+    line-height: 110px;
+    color:#ccc
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .select li{
+      height:35px;
+      line-height: 35px;
+      padding-left:10px;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .select li a{
+      color: #222;
+      text-decoration: none;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .select li:hover{
+    color: #4192E7;  
+    background: #eee;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .select li:hover a{
+    color: #4192E7; 
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .select li span{
+    width: 100%;
+    display: block;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors,.navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors-hot{
+      width: 1098px;
+      display: flex;
+      margin-top: 16px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      height: 28px;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors.tc{
+        display: block;
+        color: #ccc;
+  }
+  .navRightForm.collectForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors,.navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors-hot{
+      margin-top: 0;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors p,.navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors-hot p{
+    min-width: 74px;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors p,.navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors-hot{
+      height: 28px;
+      line-height: 25px;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors .visitorsItem li,
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors-hot .visitorsItem li{
+    float: left;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors .visitorsItem li:first-child a,
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors-hot .visitorsItem li:first-child a{
+    margin-left: 0;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors .visitorsItem li a,
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors-hot .visitorsItem li a{
+      display: block;
+      min-width: 59px;
+      height: 28px;
+      line-height: 28px;
+      padding:0 12px 0 12px;
+      text-align: center;
+      border-radius: 16px;
+      background: rgb(238,238,238,.5);
+      margin-left: 8px;
+      color: #888;
+      cursor: pointer;
+      text-decoration: none;
+  }
+  .collectForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors .visitorsItem li a{
+    background: none
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors .visitorsItem li.cur a,
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors .visitorsItem li:hover a{
+      display: block;
+      color: #4192E7;
+      background: #F0F7FF;
+      text-decoration: none;
+  }
+  .navRightForm.collectForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors .visitorsItem li:hover a{
+    background: none;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors-hot .visitorsItem li.cur a,
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors-hot .visitorsItem li:hover a{
+      display: block;
+      color: #FF0000;
+      background: rgba(255,0,0,0.08);
+      text-decoration: none;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors .visitorsItem li a{
+    color: #888;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box .Nav-item .searchFromMain .visitors-hot .visitorsItem li a{
+    color: #FF0000;
+    background: rgba(255,0,0,0.03);
+    }
+  .Tool-link > ul > li.currentpage > i,.Tool-link > ul > li > i{
+    position: relative;
+    top: 16px;
+    color: #888;
+    font-size: 12px;
+  }
+
+  .Tool-nav .Tool-login {
+    float: right;
+    padding-top: 22px;
+  }
+  .Tool-login a {
+    display: inline-block;
+    width: 98px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .Tool-login a.register {
+    background-color: #FF6666;
+    border-color: #FF6666;
+    margin-right: 10px;
+  }
+  .Tool-login a.register:hover {
+    color: #FFF;
+    background-color: #FF4444;
+    border-color: #FF4444;
+  }
+  .Tool-login a.loginbtn:hover {
+    color: #FF6666;
+    background-color: transparent;
+    border-color: #FF6666;
+    border-color: rgba(255, 102, 102, 0.5);
+  }
+  .yisuserver-nav {
+    width: 100%;
+  }
+  .yisuserver-box {
+    position: relative;
+    width: 1200px;
+    padding-left: 364px;
+    margin: 0 auto;
+  }
+  .yisuserver-box > span.hot {
+    position: absolute;
+    left: 310px;
+    top: 10px;
+  }
+  .yisuserver-box ul li {
+    float: left;
+    margin-right: 30px;
+  }
+  .yisuserver-box ul li.last {
+    margin-right: 0px;
+  }
+  .yisuserver-box ul li a {
+    display: block;
+    height: 39px;
+    line-height: 39px;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 0px 5px;
+    border-bottom: 2px solid transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .yisuserver-box ul li a:hover {
+    color: #FF6666;
+    border-color: #FF6666;
+  }
+  .pulldown-Nav {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50px;
+    /* min-height: 1200px;
+    padding-bottom: 110px; */
+    min-width: 1200px;
+    max-width: 100%;
+    display: none;
+  }
+  .shadowba{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 50px;
+    min-height: 1200px;
+    min-width: 1200px;
+    max-width: 100%;
+    padding-bottom: 110px;
+    background-color: rgb(0,0,0,.3);
+  }
+  .Tool-link > ul > li.currentpage:hover .pulldown-Nav{
+    color: #222;
+  }
+  /* .Tool-link > ul > li.currentpage .Nav-item-box:hover{
+    display: none;
+  } */
+  .pulldown-Nav .Nav-item-box {
+    width: 1163px;
+    min-height: 272px;
+    background: #fff;
+    border-radius: 0 0 3px 3px;
+    padding-left: 38px;
+    padding-bottom: 16px;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,.08);
+    position: relative;
+    margin: auto;
+    z-index: 99;
+  }
+  .pulldown-Nav .Nav-item-box.navitem{
+      display: flex;
+  }
+  .pulldown-Nav .Nav-item-box.navitem .HeaderAdvert p{
+    line-height: 57px;
+    font-size: 16px;
+    color: #888;
+  }
+  .navRightForm .pulldown-Nav .Nav-item-box{
+    min-height: 160px;
+}
+  .pulldown-Nav .Nav-item-box .Nav-item {
+    /* width: 1163px; */
+    display: flex;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item > dl{
+    width: 885px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item > .HeaderAdvert{
+    line-height: 57px;
+    font-size: 16px;
+    color: #888;
+    position: absolute;
+    right: 35px;
+  }
+  
+  .pulldown-Nav .Nav-item-box .Nav-item > .HeaderAdvert #advertImg{
+    position: absolute;
+    top: 210px;
+    width: 249px;
+    text-align: center;
+    margin: auto;
+  }
+  .advert{
+    margin-top: 3px;
+  }
+  .advert.mt20{
+    position: relative;
+    top: 4px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item > .HeaderAdvert #advertImg>.experience{
+    width: 143px;
+    height: 32px;
+    border-radius: 16px;
+    display: block;
+    margin: 15px auto;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item > .advertbox > img{
+      width: 249px;
+      height: 246px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item .dl>div{
+      display: flex;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item.last {
+    margin-right: 0px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dt {
+    position: relative;
+    line-height: 57px;
+    font-size: 16px;
+    color: #888;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dt > a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #FFFEFE;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dt > a .arrow {
+    position: absolute;
+    right: 0px;
+    top: 28px;
+    width: 11px;
+    height: 11px;
+    background: url(../images/right-arrow-white.png) no-repeat center;
+    background-size: 11px 11px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl .Nav-item-content{
+    width: 940px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dt > a:hover {
+    color: #FF6666;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dt > a:hover .arrow {
+    background: url(../images/right-arrow-red.png) no-repeat center;
+    background-size: 11px 11px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dd {
+      float: left;
+    margin-bottom: 16px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dd span{
+    display: flex;
+    justify-content: left;
+    width: 225px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dd a {
+    font-size: 16px;
+    color:#222;
+    padding: 0px 0px 0px 10px;
+    margin-left: -10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0s;
+    -moz-transition: all 0s;
+    -o-transition: all 0s;
+    transition: all 0s;
+  }
+
+  .pulldown-Nav .Nav-item-box .nav-item-left{
+    float: left;
+    padding: 7px 18px 0 0;
+    border-right: 1px solid #eee;
+    margin-right: 40px;
+  }
+  .pulldown-Nav .Nav-item-box .nav-item-left > div{
+      width: 120px;
+  }
+  .pulldown-Nav .Nav-item-box .nav-item-left > div em,.pulldown-Nav .Nav-item-box .nav-item-left div.currentpage em{
+    height:44px;
+    line-height: 55px;
+    opacity: 1;
+    font-size: 16px;
+    font-family: MicrosoftYaHei, MicrosoftYaHei-Bold;
+    font-weight:500;
+    text-align: left;
+    color: #222222;
+    cursor: pointer;
+    border-bottom:2px solid #fff;
+    display: block;
+    margin-bottom: 0px;
+  }
+  .pulldown-Nav .Nav-item-box .nav-item-left > .nav-item-tab.currentpage em{
+      display: block;
+      border-bottom:2px solid #4192E7;
+      color: #4192E7;
+      margin-bottom: 0px;
+  }
+  
+  .pulldown-Nav .Nav-item-box .nav-item-right{
+        display: none;
+        width: 1005px;
+        position: absolute;
+        left: 12.6%;
+        top: 0;
+        background: #fff;
+        padding-left: 40px;
+        border-left: 1px solid #eee;
+        min-height: 540px;
+        padding-top: 6px;
+  }
+  .pulldown-Nav .Nav-item-box .nav-item-left> .nav-item-tab.currentpage:hover .nav-item-right{
+    display: block;
+ }
+  /* .pulldown-Nav .Nav-item-box .nav-item-right .Nav-item dl dd span{
+      width: 186px;
+  } */
+  .pulldown-Nav .Nav-item-box .Nav-item .moredl{
+       width: 850px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item .moredl .Nav-item-content{
+      width: auto;
+  }
+  .pulldown-Nav .Nav-item-box .nav-item-right .Nav-item dl.moredl dd span{
+        width: 190px;
+        display: block;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dd .second-level-link a {
+    position: relative;
+    margin-top: 2px;
+    font-size: 12px;
+    color: #B6B6B6;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dd .second-level-link a i {
+    position: absolute;
+    left: 10px;
+    top: 17px;
+    width: 5px;
+    height: 5px;
+    background: url(../images/index_sprite_img.png) no-repeat -444px -178px;
+    margin: 0px !important;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dd .second-level-link a span {
+    opacity: 0.3;
+    font-size: 12px;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dd a:hover {
+    color: #4192E7;
+    text-decoration: none;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dd .second-level-link:hover a{
+    color: #B6B6B6;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dd a:hover span {
+    opacity: 1;
+  }
+  .pulldown-Nav .Nav-item-box .Nav-item dl dd a i {
+    font-size: 12px;
+    color: #FF6666;
+    font-style: normal;
+    margin-left: 10px;
+    opacity: 1;
+  }
+  ._chinaz-coll-item{
+      display: flex;
+      margin-bottom: 10px;
+      background: rgb(238,238,238,.5);
+      margin-right: 10px;
+      border-radius: 16px;
+  }
+  ._chinaz-coll-item i{
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #ccc;
+    width: 12px;
+    display: block;
+    height: 12px;
+    line-height: 10px;
+    text-align: center;
+    margin-top: 8px;
+    position: relative;
+    left: -12px;
+    margin-left: 3px;
+  }
+ ._chinaz-coll-item a{
+    padding: 0 7px 0 0px;
+  }
+  ._chinaz-coll-item i:hover{
+      font-size:12px;
+      color:#fff;
+      background: #FF0000;
+  }
+  #chinaz_topbarBox a.username {display:flex;text-decoration:none;}
+  #chinaz_topbarBox .userbar .userImg,#chinaz_topbarBox .userbar .userImg img {width:30px;height:30px;display:block;border-radius:50%;}
+  #chinaz_topbarBox .userbar .userImg .iconvip{width:35px;height:36px;position: absolute;top:5px;background: url("//csstools.chinaz.com/tools/images/headimgbg.png") no-repeat;}
+  #chinaz_topbarBox .userbar i {font-size: 16px;position: relative;top: 1px;}
+  #chinaz_topbarBox #top_link_center .corner{font-size:12px}
+  #chinaz_topbarBox .userbar{margin-top: 5px;}
+  #chinaz_topbarBox .userbar .userNameTxt {overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:51px;}
+  #chinaz_topbarBox .userbar .userbarMain {display:none;z-index: 999;width:240px;height:250px;border-radius:3px;position:absolute;background:#fff;box-shadow:-1px 3px 5px 3px rgba(82,148,218,0.1);margin-left:-132px;margin-top: 3px;}
+  #chinaz_topbarBox:hover .userbarMain {display:block;}
+  #chinaz_topbarBox .userbar .userbarMain .poptip-arrow {position:absolute;color:#F1C78D;top:-17px;right:37px;text-shadow:0px -3px 3px rgba(82,148,218,0.1);}
+  #chinaz_topbarBox .userbar .userbarMain .userTop {width:240px;height:115px;background:url(//csstools.chinaz.com/tools/images/viptopbg.png) no-repeat;position:absolute;top:-5px;}
+  #chinaz_topbarBox .userbar .userbarMain .noVip {width:240px;height:115px;background:url(//csstools.chinaz.com/tools/images/novipbg.png) no-repeat;}
+  #chinaz_topbarBox .userbar .userbarMain .userTop p {margin-top:30px;margin-left:10px;}
+  #chinaz_topbarBox .userbar .userbarMain .userTop .status {height:36px;color:#FFCC85;margin-top:10px;margin-left:10px;}
+  #chinaz_topbarBox .userbar .userbarMain .userTop .status p {height:18px;line-height:18px;margin-top:unset;}
+  #chinaz_topbarBox .userbar .userbarMain .userTop .renewBtn {width:74px;height:30px;line-height:30px;text-align:center;font-weight:bold;color:#653E0A;font-size:12px;border-radius:3px;background:linear-gradient(112deg,#ffcc85,#b67418 100%);cursor:pointer;position:relative;top:-15px;right:16px;}
+  #chinaz_topbarBox .userbar .userbarMain .userTop .renewBtn:hover {background:linear-gradient(200deg,#ffcc85,#b67418 100%);}
+  #chinaz_topbarBox .userbar .userbarMain .userTop .vipopen {width:56px;height:29px;line-height:29px;text-align:center;color:#FFCC85;border-radius:3px;border:1px solid #FFCC85;position:relative;top:-15px;right:16px;cursor:pointer;}
+  #chinaz_topbarBox .userbar .userbarMain .userTop .vipopen:hover {background:none;border:1px solid #FFCC85;opacity:.8;}
+  #chinaz_topbarBox .userbar .userbarMain .userbarItem {padding:15px 0;}
+  #chinaz_topbarBox .userbar .userbarMain .userbarItem li {display:flex;height:32px;line-height:32px;padding-left:22px;cursor:pointer;}
+  #chinaz_topbarBox .userbar .userbarMain .userbarItem li span{width:218px;display: block;}
+  #chinaz_topbarBox .userbar .userbarMain .userTop .userbarItem li:hover {color:rgba(182,116,24,1);background:rgba(238,238,238,0.3);}
+  #chinaz_topbarBox .userbar .userbarMain .userTop.noVip .userbarItem li:hover {color:#4192E7;background:rgba(238,238,238,0.3);}
+  #chinaz_topbarBox .userbar .userbarMain .userbarItem i.iconfont {font-size:15px;}
+  #chinaz_topbarBox .userbar em{font-size: 12px;}
