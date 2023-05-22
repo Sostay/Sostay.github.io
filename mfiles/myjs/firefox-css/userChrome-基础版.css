@@ -1,0 +1,14 @@
+:root[sessionrestored]
+     #navigator-toolbox:not([inFullscreen="true"]):not(:focus-within) #nav-bar,
+:root[sessionrestored]
+     #navigator-toolbox:not([inFullscreen="true"]):not(:focus-within) #PersonalToolbar {
+    height: 0;
+    min-height: 0;
+    opacity: 0;
+    margin: -10px 0;
+}
+
+/* 自定义调整标签栏高度 */
+#navigator-toolbox:not([inFullscreen="true"]) {
+    --tab-min-height: 30px;
+}
