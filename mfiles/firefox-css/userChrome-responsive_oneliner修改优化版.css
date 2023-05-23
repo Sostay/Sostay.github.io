@@ -12,7 +12,7 @@ See the above repository for updates as well as full license text. */
 /* Modify it to suit your needs */
 @media screen and (min-width: 1100px){
   :root[tabsintitlebar][sizemode="normal"]{
-    --uc-window-drag-space-width: 24px;
+    --uc-window-drag-space-width: 0px;
   }
   :root[uidensity="compact"]{
     --tab-block-margin: 2px !important;
@@ -32,7 +32,7 @@ See the above repository for updates as well as full license text. */
 /* Dependent on how many items are in navigation toolbar ADJUST AS NEEDED */
   @media screen and (max-width: 1500px){
     #urlbar-container{
-      min-width: 300px !important;
+      min-width: 200px !important;
       flex-shrink: 1 !important;
     }
   }
