@@ -21,6 +21,7 @@ body::before {
   content: "";
   position: fixed;
   background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background-blend-mode: color-dodge;
   background-size: cover;
   left: 0;
   right: 0;
