@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://sf-texture-decode.vercel.app/ -->
+<html lang="en" id="Dexsgk" fr-init-rc="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sf_texture_decode</title>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer="" src="./files/script.js"></script>
+  <script type="module" crossorigin="" src="./files/1cc15944.js"></script>
+  <link rel="stylesheet" href="./files/a5fb9ca4.css">
+<style type="text/css">#htmlToothbrush #bodyToothbrush .parentToothbrush .bilibili-player-video {margin:0 !important;}
+#htmlToothbrush, #bodyToothbrush {overflow:hidden !important;zoom:100% !important;}
+#htmlToothbrush #bodyToothbrush .parentToothbrush {overflow:visible !important;z-index:auto !important;transform:none !important;-webkit-transform-style:flat !important;transition:none !important;contain:none !important;}
+#htmlToothbrush #bodyToothbrush .absoluteToothbrush {position:absolute !important;}
+#htmlToothbrush #bodyToothbrush .playerToothbrush {position:fixed !important;top:0px !important;left:0px !important;width:100vw !important;height:100vh !important;max-width:none !important;max-height:none !important;min-width:0 !important;min-height:0 !important;margin:0 !important;padding:0 !important;z-index:2147483646 !important;border:none !important;background-color:#000 !important;transform:none !important;}
+#htmlToothbrush #bodyToothbrush .parentToothbrush video {object-fit:contain !important;}
+#htmlToothbrush #bodyToothbrush .parentToothbrush .videoToothbrush {width:100vw !important;height:100vh !important;}
+#playerControlBtn {text-shadow: none;visibility:hidden;opacity:0;display:none;transition: all 0.5s ease;cursor: pointer;font: 12px "微软雅黑";margin:0;width:64px;height:20px;line-height:20px;border:none;text-align: center;position: fixed;z-index:2147483647;background-color: #27A9D8;color: #FFF;} #playerControlBtn:hover {visibility:visible;opacity:1;background-color:#2774D8;}
+#picinpicBtn {text-shadow: none;visibility:hidden;opacity:0;display:none;transition: all 0.5s ease;cursor: pointer;font: 12px "微软雅黑";margin:0;width:53px;height:20px;line-height:20px;border:none;text-align: center;position: fixed;z-index:2147483647;background-color: #27A9D8;color: #FFF;} #picinpicBtn:hover {visibility:visible;opacity:1;background-color:#2774D8;}
+#leftFullStackButton{display:none;position:fixed;width:1px;height:100vh;top:0;left:0;z-index:2147483647;background:#000;}
+#rightFullStackButton{display:none;position:fixed;width:1px;height:100vh;top:0;right:0;z-index:2147483647;background:#000;}</style><style data-id="immersive-translate-input-injected-css">.immersive-translate-input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2147483647;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.immersive-translate-input-loading {
+  --loading-color: #f78fb6;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: block;
+  margin: 12px auto;
+  position: relative;
+  color: white;
+  left: -100px;
+  box-sizing: border-box;
+  animation: immersiveTranslateShadowRolling 1.5s linear infinite;
+}
+
+@keyframes immersiveTranslateShadowRolling {
+  0% {
+    box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  12% {
+    box-shadow: 100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  25% {
+    box-shadow: 110px 0 var(--loading-color), 100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  36% {
+    box-shadow: 120px 0 var(--loading-color), 110px 0 var(--loading-color), 100px 0 var(--loading-color), 0px 0 rgba(255, 255, 255, 0);
+  }
+
+  50% {
+    box-shadow: 130px 0 var(--loading-color), 120px 0 var(--loading-color), 110px 0 var(--loading-color), 100px 0 var(--loading-color);
+  }
+
+  62% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color), 120px 0 var(--loading-color), 110px 0 var(--loading-color);
+  }
+
+  75% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color), 120px 0 var(--loading-color);
+  }
+
+  87% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 var(--loading-color);
+  }
+
+  100% {
+    box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0);
+  }
+}
+
+
+.immersive-translate-search-recomend {
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  position: relative;
+  font-size: 16px;
+}
+.immersive-translate-search-enhancement-en-title {
+  color: #4d5156;
+}
+/* dark */
+@media (prefers-color-scheme: dark) {
+  .immersive-translate-search-recomend {
+    border: 1px solid #3c4043;
+  }
+  .immersive-translate-close-action svg {
+    fill: #bdc1c6;
+  }
+
+.immersive-translate-search-enhancement-en-title {
+  color: #bdc1c6;
+}
+}
+
+
+.immersive-translate-search-settings {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.immersive-translate-search-recomend::before {
+  /* content: " "; */
+  /* width: 20px; */
+  /* height: 20px; */
+  /* top: 16px; */
+  /* position: absolute; */
+  /* background: center / contain url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAxlBMVEUAAADpTInqTIjpSofnSIfqS4nfS4XqS4nqTIjsTYnrTInqTIroS4jvQIDqTIn////+/v7rSYjpTIn8/v7uaZzrTIr9/f3wfansWJL88/b85e73qc39+/v3xNnylrvrVI/98fb62Obva5/8+fr76vH4y9zpSIj74e353Oj1ocTzm77xhK/veKbtYpjsXJTqU47oTInxjrXyh7L99fj40eH2ttH1udD3sc31ssz1rMnykLXucqPtbqD85e/1xdn2u9DzqcXrUY6FaJb8AAAADnRSTlMA34BgIM8Q37/fz7+/EGOHcVQAAAGhSURBVDjLhZPncuowEEZFTW7bXVU7xsYYTO/p7bb3f6lICIOYJOT4h7/VnFmvrBFjrF3/CR/SajBHswafctG0Qg3O8O0Xa8BZ6uw7eLjqr30SofCDVSkemMinfL1ecy20r5ygR5zz3ArcAqJExPTPKhDENEmS30Q9+yo4lEQkqVTiIEAHCT10xWERRdH0Bq0aCOPZNDV3s0xaYce1lHEoDHU8wEh3qRJypNcTAeKUIjgKMeGLDoRCLVLTVf+Ownj8Kk6H9HM6QXPgYjQSB0F00EJEu10ILQrs/QeP77BSSr0MzLOyuJJQbnUoOOIUI/A8EeJk9E4YUHUWiRyTVKGgQUB8/3e/NpdGlfI+FMQyWsCBWyz4A/ZyHXyiiz0Ne5aGZssoxRmcChw8/EFKQ5JwwkUo3FRT5yXS7q+Y/rHDZmFktzpGMvO+5QofA4FPpEmGw+EWRCFvnaof7Zhe8NuYSLR0xErKLThUSs8gnODh87ssy6438yzbLzxl012HS19vfCf3CNhnbWOL1eEsDda+gDPUvri8tSZzNFrwIZf1NmNvqC1I/t8j7nYAAAAASUVORK5CYII='); */
+}
+
+.immersive-translate-search-title {}
+
+.immersive-translate-search-title-wrapper {}
+
+.immersive-translate-search-time {
+  font-size: 12px;
+  margin: 4px 0 24px;
+  color: #70757a;
+}
+
+.immersive-translate-expand-items {
+  display: none;
+}
+
+.immersive-translate-search-more {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.immersive-translate-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size:15px;
+}
+
+.immersive-translate-modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.immersive-translate-modal-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: hsl(205, 20%, 32%);
+}
+
+.immersive-translate-modal-body {
+  color: hsl(205, 20%, 32%)
+}
+
+.immersive-translate-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.immersive-translate-close:hover,
+.immersive-translate-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.immersive-translate-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.immersive-translate-btn {
+  color: #fff;
+  background-color: #ea4c89;
+  border: none;
+  font-size: 14px;
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.immersive-translate-cancel-btn {
+  /* gray color */
+  background-color: rgb(89, 107, 120);
+}
+
+.immersive-translate-btn:hover {
+  background-color: #f082ac;
+}
+
+.immersive-translate-cancel-btn:hover {
+  background-color: hsl(205, 20%, 32%);
+}
+
+
+.immersive-translate-btn svg {
+  margin-right: 5px;
+}
+
+.immersive-translate-link {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  text-decoration: none;
+  color: #007bff;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, .1);
+}
+
+.immersive-translate-primary-link {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-drag: none;
+  text-decoration: none;
+  color: #ea4c89;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, .1);
+}
+
+.immersive-translate-modal input[type="radio"] {
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.immersive-translate-modal label {
+  cursor: pointer;
+}
+
+.immersive-translate-close-action {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+  cursor: pointer;
+}
+</style><style fr-css-fe3d6e7d="true" id="KhapmxGnrCJo" media="screen" type="text/css">@charset "UTF-8";:root{--fr-font-basefont:system-ui,-apple-system,BlinkMacSystemFont,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji','Android Emoji','EmojiSymbols','emojione mozilla','twemoji mozilla','office365icons','iconfont','icomoon','FontAwesome','Font Awesome 5 Pro','Font Awesome 6 Pro','IcoFont','fontello','themify','Material Icons','Material Icons Extended','bootstrap-icons','Segoe Fluent Icons','Material-Design-Iconic-Font';--fr-font-fontscale:1;--fr-font-family:'Microsoft YaHei UI';--fr-font-shadow:0 0 0.75px #7c7c7cdd;--fr-font-stroke:0.015px currentcolor;--fr-no-stroke:0px transparent;}@font-face{font-family:"Arial";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"FangSong";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Georgia";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"HanHei SC";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Helvetica";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Helvetica Neue";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"KaiTi";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Microsoft YaHei";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"MingLiU";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"NSimSun";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Noto Sans";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Open Sans";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PMingLiU";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PingFangHK-Medium";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PingFangHK-Regular";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PingFangSC-Medium";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PingFangSC-Regular";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"PingFangSC-Semibold";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Roboto";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"RobotoDraft";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"SF Pro SC";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Segoe UI";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"SimHei";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"SimSun";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Tahoma";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Ubuntu";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"Verdana";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\4EFF\5B8B";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\5B8B\4F53";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\5FAE\8EDF\6B63\9ED1\9AD4";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\5FAE\8F6F\96C5\9ED1";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\6977\4F53";src:local("MicrosoftYaHeiUI");}@font-face{font-family:"\9ED1\4F53";src:local("MicrosoftYaHeiUI");}:root#Dexsgk :is(:not(i,head *):not([class*='glyph'],[class*='icon'],[class*='fa-'],[class*='vjs-'],[class*='mu-'])){font-family:var(--fr-font-family),var(--fr-font-basefont);text-shadow:var(--fr-font-shadow);-webkit-text-stroke:var(--fr-font-stroke);font-feature-settings:unset;font-variant:unset;font-optical-sizing:auto;font-kerning:auto;-webkit-font-smoothing:antialiased!important;text-rendering:optimizeLegibility;}:root#Dexsgk ::selection{color:#ffffff!important;background:#0084ff!important;}:root#Dexsgk :is(progress,meter,datalist,samp,kbd,pre,pre *,code,code *){-webkit-text-stroke:var(--fr-no-stroke)!important;text-shadow:none!important}.fr-fix-802354bd{-webkit-text-stroke:var(--fr-no-stroke)!important;}</style></head>
+
+
+
+
+<body>
+  <div class="flex flex-col items-center justify-center h-screen">
+    <div class="bg-white rounded-lg shadow-lg p-12 mb-4">
+      <img src="./files/sketchfab-logo-text.svg" alt="Sketchfab" class="mb-4">
+      <h2 class="text-xl text-gray-600 mb-4">Enter the URL and click submit</h2>
+      <div class="flex flex-col items-center">
+        <input id="url" type="text" placeholder="Enter URL" class="w-64 px-4 py-2 border border-gray-300 rounded-md mb-4">
+        <p id="tips" class="text-red-500 mb-4 hidden">
+        </p><p>
+          <button id="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded fr-fix-802354bd">Submit</button>
+      </p></div>
+    </div>
+    <footer class="text-center flex items-center justify-center fixed bottom-0 left-0 w-full h-16 text-white bottom-0">
+      created by:<a href="https://github.com/krapnikkk" target="_blank" class="text-blue underline">krapnik</a>
+    </footer>
+  </div>
+
+
+
+<tbdiv id="picinpicBtn"></tbdiv><tbdiv id="playerControlBtn"></tbdiv><tbdiv id="leftFullStackButton"></tbdiv><tbdiv id="rightFullStackButton"></tbdiv><div class="wsx_fade" style="pointer-events: none;"></div><div class="wsx_scroll" style="height: 832px; opacity: 0; pointer-events: none;"><div class="wsx_scroll_bar" style="background-color: rgb(255, 152, 0); opacity: 0.6; border-radius: 3px; width: 6px; left: 19px;"></div></div><div class="niu_fade" style="pointer-events: none;"></div><div class="niu_scroll" style="width: 1478px; opacity: 0; pointer-events: none;"><div class="niu_scroll_bar" style="background-color: rgb(255, 152, 0); opacity: 0.6; border-radius: 3px; height: 6px; top: 20px;"></div></div></body></html>
