@@ -13,16 +13,14 @@
 <body>
     <div class="app-container">
         <div class="content-container">
-            <div class="welcome-screen" id="welcome-screen">
-                <div class="welcome-content">
-                    <h1>AI Hub</h1>
-                    <p>点击底部图标选择AI聊天工具</p>
-                    <div class="welcome-icons">
-                        <img src="icons/doubao.png" alt="豆包" class="welcome-icon">
-                        <img src="icons/chatgpt.png" alt="ChatGPT" class="welcome-icon">
-                        <img src="icons/claude.png" alt="Claude" class="welcome-icon">
-                        <img src="icons/perplexity.png" alt="Perplexity" class="welcome-icon">
-                    </div>
+            <iframe id="content-frame" src="https://www.doubao.com/chat/" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+            <div class="loading" id="loading-indicator"></div>
+            <div class="error-container" id="error-container">
+                <div class="error-content">
+                    <h2>无法加载网站</h2>
+                    <p>由于安全限制，部分网站可能无法在iframe中加载。</p>
+                    <p>您可以点击下方按钮直接访问该网站。</p>
+                    <button id="direct-visit-btn" class="direct-visit-btn">直接访问</button>
                 </div>
             </div>
         </div>
@@ -66,7 +64,7 @@
         </div>
     </div>
 
-    <script src="js/direct-open.js"></script>
+    <script src="js/iframe-app.js"></script>
     <script>
         // 注册Service Worker
         if ('serviceWorker' in navigator) {
