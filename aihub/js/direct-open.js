@@ -1,17 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const contentFrame = document.getElementById('content-frame');
     const tabContainer = document.getElementById('tab-container');
     const tabScrollContainer = document.getElementById('tab-scroll-container');
     const tabs = document.querySelectorAll('.tab');
     const themeColorMeta = document.getElementById('theme-color');
-    const contentContainer = document.querySelector('.content-container');
     
-    let lastScrollY = 0;
     let isTabHidden = false;
     let touchStartX = 0;
     let touchEndX = 0;
     let currentTabIndex = 0;
-    let isScrolling = false;
     let tabColors = {
         '豆包': '#0066FF',
         'DeepSeek': '#000000',
@@ -25,31 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
         'Pi': '#8E44AD',
         '通义': '#FF6A00'
     };
-
-    // 初始化加载动画
-    const loadingElement = document.createElement('div');
-    loadingElement.className = 'loading';
-    contentFrame.parentNode.appendChild(loadingElement);
-
-    // 监听iframe加载完成事件
-    contentFrame.addEventListener('load', () => {
-        loadingElement.style.display = 'none';
-        
-        // 尝试获取iframe内容的主题色
-        try {
-            setTimeout(() => {
-                updateThemeColor();
-            }, 1000);
-        } catch (error) {
-            console.error('无法获取iframe主题色:', error);
-        }
-    });
-
+    
+    // 从localStorage获取上次访问的网站
+    const lastVisitedSite = localStorage.getItem('lastVisitedSite');
+    
     // 更新主题色
-    function updateThemeColor() {
-        const activeTab = document.querySelector('.tab.active');
-        const siteName = activeTab.getAttribute('data-name');
-        
+    function updateThemeColor(siteName) {
         if (tabColors[siteName]) {
             themeColorMeta.content = tabColors[siteName];
         } else {
@@ -57,20 +34,27 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 切换标签页
-    function switchTab(tab) {
-        if (tab.classList.contains('active')) return;
-        
-        // 显示加载动画
-        loadingElement.style.display = 'block';
+    // 打开网站
+    function openSite(tab) {
+        if (tab.classList.contains('active')) {
+            // 如果已经是活动标签，则直接打开网站
+            window.open(tab.getAttribute('data-url'), '_blank');
+            return;
+        }
         
         // 更新活动标签
         document.querySelector('.tab.active').classList.remove('active');
         tab.classList.add('active');
         
-        // 更新iframe URL
+        // 获取网站URL和名称
         const url = tab.getAttribute('data-url');
-        contentFrame.src = url;
+        const siteName = tab.getAttribute('data-name');
+        
+        // 保存到localStorage
+        localStorage.setItem('lastVisitedSite', siteName);
+        
+        // 打开网站
+        window.open(url, '_blank');
         
         // 滚动到选中的标签
         const tabRect = tab.getBoundingClientRect();
@@ -91,100 +75,34 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         
         // 更新主题色
-        updateThemeColor();
+        updateThemeColor(siteName);
     }
 
     // 为每个标签添加点击事件
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            switchTab(tab);
+            openSite(tab);
         });
     });
 
-    // 直接监听主窗口的点击和滚动事件
+    // 监听主窗口的点击事件
     document.addEventListener('click', (e) => {
         // 如果点击的不是标签栏，则隐藏标签栏
         if (!tabContainer.contains(e.target) && !isTabHidden) {
             hideTabBar();
         }
     });
-    
-    // 监听主窗口的滚动事件
-    window.addEventListener('scroll', handleScroll);
-    
-    // 监听iframe的加载事件，尝试监听iframe内部的滚动和点击
-    contentFrame.addEventListener('load', () => {
-        try {
-            // 尝试访问iframe内容
-            const frameDocument = contentFrame.contentDocument || contentFrame.contentWindow.document;
-            
-            // 监听iframe内部的滚动事件
-            frameDocument.addEventListener('scroll', handleScroll);
-            
-            // 监听iframe内部的点击事件
-            frameDocument.addEventListener('click', () => {
-                if (!isTabHidden) {
-                    hideTabBar();
-                }
-            });
-            
-            // 监听iframe内部的触摸事件
-            frameDocument.addEventListener('touchstart', () => {
-                if (!isTabHidden) {
-                    hideTabBar();
-                }
-            });
-        } catch (error) {
-            console.warn('无法访问iframe内容，这可能是由于跨域限制导致的:', error);
-            // 如果无法访问iframe内容，则依赖主窗口的事件监听
-        }
-    });
-
-    // 处理滚动事件
-    function handleScroll() {
-        if (isScrolling) return;
-        
-        isScrolling = true;
-        
-        try {
-            // 获取当前滚动位置
-            const currentScrollY = window.scrollY || document.documentElement.scrollTop;
-            
-            // 如果向下滚动超过50px且标签栏未隐藏，则隐藏标签栏
-            if (currentScrollY > lastScrollY && currentScrollY > 50 && !isTabHidden) {
-                hideTabBar();
-            } 
-            // 如果向上滚动且标签栏已隐藏，则显示标签栏
-            else if (currentScrollY < lastScrollY && isTabHidden) {
-                showTabBar();
-            }
-            
-            lastScrollY = currentScrollY;
-        } catch (error) {
-            console.error('处理滚动事件时出错:', error);
-        }
-        
-        setTimeout(() => {
-            isScrolling = false;
-        }, 100);
-    }
 
     // 隐藏标签栏
     function hideTabBar() {
         tabContainer.classList.add('hidden');
         isTabHidden = true;
-        
-        // 调整内容区域高度
-        contentContainer.style.height = '100%';
     }
 
     // 显示标签栏
     function showTabBar() {
         tabContainer.classList.remove('hidden');
         isTabHidden = false;
-        
-        // 恢复内容区域高度
-        contentContainer.style.height = `calc(100% - var(--tab-height))`;
     }
 
     // 监听触摸事件，实现左右滑动切换标签
@@ -206,10 +124,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (swipeDistance > 0 && currentTabIndex > 0) {
             // 向右滑动，切换到上一个标签
-            switchTab(tabs[currentTabIndex - 1]);
+            openSite(tabs[currentTabIndex - 1]);
         } else if (swipeDistance < 0 && currentTabIndex < tabs.length - 1) {
             // 向左滑动，切换到下一个标签
-            switchTab(tabs[currentTabIndex + 1]);
+            openSite(tabs[currentTabIndex + 1]);
         }
         
         // 显示标签栏
@@ -238,10 +156,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // 监听方向键，实现键盘导航
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft' && currentTabIndex > 0) {
-            switchTab(tabs[currentTabIndex - 1]);
+            openSite(tabs[currentTabIndex - 1]);
             showTabBar();
         } else if (e.key === 'ArrowRight' && currentTabIndex < tabs.length - 1) {
-            switchTab(tabs[currentTabIndex + 1]);
+            openSite(tabs[currentTabIndex + 1]);
             showTabBar();
         } else if (e.key === 'Escape') {
             if (isTabHidden) {
@@ -272,4 +190,70 @@ document.addEventListener('DOMContentLoaded', () => {
             showTabBar();
         }
     }, false);
+    
+    // 处理URL参数
+    const urlParams = new URLSearchParams(window.location.search);
+    const siteParam = urlParams.get('site');
+    
+    if (siteParam) {
+        // 映射参数到网站名称
+        const siteMap = {
+            'doubao': '豆包',
+            'deepseek': 'DeepSeek',
+            'perplexity': 'Perplexity',
+            'claude': 'Claude',
+            'chatgpt': 'ChatGPT',
+            'grok': 'Grok',
+            'copilot': 'Copilot',
+            'huggingchat': 'HuggingChat',
+            'chatbox': 'Chatbox',
+            'pi': 'Pi',
+            'tongyi': '通义'
+        };
+        
+        // 如果参数有效，找到对应的标签并点击
+        if (siteMap[siteParam]) {
+            const siteName = siteMap[siteParam];
+            tabs.forEach(tab => {
+                if (tab.getAttribute('data-name') === siteName) {
+                    // 模拟点击标签
+                    setTimeout(() => {
+                        openSite(tab);
+                    }, 100);
+                }
+            });
+        }
+    } else if (lastVisitedSite) {
+        // 如果没有URL参数但有上次访问记录，则恢复上次的选择
+        tabs.forEach(tab => {
+            if (tab.getAttribute('data-name') === lastVisitedSite) {
+                // 更新活动标签
+                document.querySelector('.tab.active').classList.remove('active');
+                tab.classList.add('active');
+                
+                // 更新当前标签索引
+                tabs.forEach((t, index) => {
+                    if (t === tab) {
+                        currentTabIndex = index;
+                    }
+                });
+                
+                // 更新主题色
+                updateThemeColor(lastVisitedSite);
+            }
+        });
+    }
+    
+    // 为欢迎页面的图标添加点击事件
+    const welcomeIcons = document.querySelectorAll('.welcome-icon');
+    welcomeIcons.forEach(icon => {
+        icon.addEventListener('click', () => {
+            const altText = icon.getAttribute('alt');
+            tabs.forEach(tab => {
+                if (tab.getAttribute('data-name') === altText) {
+                    openSite(tab);
+                }
+            });
+        });
+    });
 }); 
