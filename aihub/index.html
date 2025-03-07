@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#ffffff" id="theme-color">
+    <title>AI Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+</head>
+<body>
+    <div class="app-container">
+        <div class="content-container">
+            <iframe id="content-frame" src="https://www.doubao.com/chat/" frameborder="0" allowfullscreen></iframe>
+        </div>
+        
+        <div class="tab-container" id="tab-container">
+            <div class="tab-scroll-container" id="tab-scroll-container">
+                <div class="tab active" data-url="https://www.doubao.com/chat/" data-name="豆包">
+                    <img src="icons/doubao.png" alt="豆包" class="tab-icon">
+                    <span class="tab-name">豆包</span>
+                </div>
+                <div class="tab" data-url="https://chat.deepseek.com" data-name="DeepSeek">
+                    <img src="icons/deepseek.png" alt="DeepSeek" class="tab-icon">
+                    <span class="tab-name">DeepSeek</span>
+                </div>
+                <div class="tab" data-url="https://perplexity.ai/" data-name="Perplexity">
+                    <img src="icons/perplexity.png" alt="Perplexity" class="tab-icon">
+                    <span class="tab-name">Perplexity</span>
+                </div>
+                <div class="tab" data-url="https://claude.ai/" data-name="Claude">
+                    <img src="icons/claude.png" alt="Claude" class="tab-icon">
+                    <span class="tab-name">Claude</span>
+                </div>
+                <div class="tab" data-url="https://chat.openai.com" data-name="ChatGPT">
+                    <img src="icons/chatgpt.png" alt="ChatGPT" class="tab-icon">
+                    <span class="tab-name">ChatGPT</span>
+                </div>
+                <div class="tab" data-url="https://grok.com" data-name="Grok">
+                    <img src="icons/grok.png" alt="Grok" class="tab-icon">
+                    <span class="tab-name">Grok</span>
+                </div>
+                <div class="tab" data-url="https://copilot.microsoft.com/?dpwa=1" data-name="Copilot">
+                    <img src="icons/copilot.png" alt="Copilot" class="tab-icon">
+                    <span class="tab-name">Copilot</span>
+                </div>
+                <div class="tab" data-url="https://huggingface.co/chat/" data-name="HuggingChat">
+                    <img src="icons/huggingchat.png" alt="HuggingChat" class="tab-icon">
+                    <span class="tab-name">HuggingChat</span>
+                </div>
+                <div class="tab" data-url="https://web.chatboxai.app/" data-name="Chatbox">
+                    <img src="icons/chatbox.png" alt="Chatbox" class="tab-icon">
+                    <span class="tab-name">Chatbox</span>
+                </div>
+                <div class="tab" data-url="https://pi.ai" data-name="Pi">
+                    <img src="icons/pi.png" alt="Pi" class="tab-icon">
+                    <span class="tab-name">Pi</span>
+                </div>
+                <div class="tab" data-url="https://tongyi.aliyun.com" data-name="通义">
+                    <img src="icons/tongyi.png" alt="通义" class="tab-icon">
+                    <span class="tab-name">通义</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/url-handler.js"></script>
+    <script>
+        // 注册Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('service-worker.js')
+                    .then(registration => {
+                        console.log('ServiceWorker 注册成功: ', registration.scope);
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker 注册失败: ', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 

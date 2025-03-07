@@ -1,0 +1,50 @@
+{
+    "name": "AI Hub",
+    "short_name": "AI Hub",
+    "description": "一站式AI聊天工具集合",
+    "start_url": "/aihub/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4285f4",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "豆包",
+            "short_name": "豆包",
+            "description": "打开豆包AI聊天",
+            "url": "/aihub/?site=doubao",
+            "icons": [{ "src": "icons/doubao.png", "sizes": "96x96" }]
+        },
+        {
+            "name": "ChatGPT",
+            "short_name": "ChatGPT",
+            "description": "打开ChatGPT聊天",
+            "url": "/aihub/?site=chatgpt",
+            "icons": [{ "src": "icons/chatgpt.png", "sizes": "96x96" }]
+        },
+        {
+            "name": "Claude",
+            "short_name": "Claude",
+            "description": "打开Claude聊天",
+            "url": "/aihub/?site=claude",
+            "icons": [{ "src": "icons/claude.png", "sizes": "96x96" }]
+        }
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "capture_links": "existing-client-navigate"
+} 
